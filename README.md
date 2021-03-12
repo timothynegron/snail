@@ -2,7 +2,7 @@
 
 ### About
 
-A algorithm that arranges the elements of a two dimensional array into a new one dimensional array traversing clockwise.
+An algorithm that arranges the elements of a two dimensional array into a new one dimensional array traversing clockwise.
 
 ### Codewars Link
 
@@ -16,6 +16,7 @@ Create any two dimensional array, call the snail function, and pass it the two d
 
 ```javascript
 let array = [[1,2,3,1], [4,5,6,4], [7,8,9,7], [7,8,9,7]]
+
 console.log(snail(array));
 ```
 
