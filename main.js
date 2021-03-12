@@ -45,7 +45,7 @@ function moveRight () {
         }
     }
     
-    // Move the starting point
+    // Move the top left starting point
     startPointTopLeft++;
 }
 
@@ -64,7 +64,7 @@ function moveDown () {
         }
     }
     
-    // Move the starting point
+    // Move the top right starting point
     startPointTopRight++;
 }
 
@@ -83,7 +83,7 @@ function moveLeft () {
         }
     }
     
-    // Move the starting point
+    // Move the bottom right starting point
     startPointBottomRight1--;
     startPointBottomRight2--;
 }
@@ -103,7 +103,7 @@ function moveUp () {
         }
     }
     
-    // Move the starting point
+    // Move the bottom left starting point
     startPointBottomLeft1--;
     startPointBottomLeft2++;
 }
