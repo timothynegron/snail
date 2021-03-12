@@ -14,7 +14,7 @@ function snail (array) {
         return [];
     }
 
-    // If the length of the array is 1, return the index
+    // If the length of the array is 1, return the value of the first index
     if(array[0].length === 1){
         return array[0];
     }
@@ -34,6 +34,7 @@ function moveRight () {
     
     // Store all the top array values from left to right
     for(let j = startPointTopLeft; j < array.length; j++){
+
         if(array[startPointTopLeft][j] !== null){
             snailArray.push(array[startPointTopLeft][j]);
             array[startPointTopLeft][j] = null;
@@ -50,8 +51,9 @@ function moveRight () {
 
 function moveDown () {
     
-    // Store all the top arrays from up to down
+    // Store the right side array values from up to down
     for(let i = startPointTopRight; i < array.length; i++){
+
         if(array[i][array.length - startPointTopRight] !== null){
             snailArray.push(array[i][array.length - startPointTopRight]);
             array[i][array.length - startPointTopRight] = null;
@@ -68,8 +70,9 @@ function moveDown () {
 
 function moveLeft () {
     
-    // Store all the array values from right to left
+    // Store all the bottom array values from right to left
     for(let j = startPointBottomRight2; j >= 0; j--){
+
         if(array[startPointBottomRight1][j] !== null){
             snailArray.push(array[startPointBottomRight1][j]);
             array[startPointBottomRight1][j] = null;
@@ -87,8 +90,9 @@ function moveLeft () {
 
 function moveUp () {
     
-    // store all the array values from down to up
+    // Store all the left side array values from down to up
     for(let i = startPointBottomLeft1; i >= 0; i--){
+
         if(array[i][startPointBottomLeft2] !== null){
             snailArray.push(array[i][startPointBottomLeft2]);
             array[i][startPointBottomLeft2] = null;
